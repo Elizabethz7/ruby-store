@@ -26,7 +26,7 @@ Este repositorio agrupa todos los conocimientos que he aprendido en ruby. Se com
 | `ruby-oci8` + `activerecord-oracle_enhanced-adapter` | Conexión Oracle|
 | `mysql2` | Conexión MySQL|
 | `dotenv-rails` | Variables de entorno |
-| `semantic_logger` | Logging estructurado |
+| `devise` | Autenticación, sign in sign up ...|
 
 ---
 
@@ -89,7 +89,13 @@ bin/rails server
 
 ## Rutas
 
-### `GET /api/v1/clientes/:nit`
+### `/products`
+Ruta de CRUD inicial
+### `/authentication`
+Ruta donde se agruparan distintas formas de autenticar en Rails
+#### `/authentication/v1`
+Autenticación por medio de `devise`
+* `/authentication/v1/others`: ruta de prueba de controlador anidado con bandera nativa `before_action :authenticate_user!` de `devise` para redireccionar a un usuario si no esta autenticado.
 
 ---
 
