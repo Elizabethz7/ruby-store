@@ -97,6 +97,8 @@ Ruta donde se agruparan distintas formas de autenticar en Rails
 Autenticación por medio de `devise`
 * `/authentication/v1/others`: ruta de prueba de controlador anidado con bandera nativa `before_action :authenticate_user!` de `devise` para redireccionar a un usuario si no esta autenticado.
 
+* `/authentication/v1/logout`: ruta de logout (sign out) con helper `sign_out` de `devise`.
+
 ---
 
 ## Vistas

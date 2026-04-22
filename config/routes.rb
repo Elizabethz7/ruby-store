@@ -34,6 +34,7 @@ Rails.application.routes.draw do
   namespace :authentication do
     namespace :v1 do
       get "/others", to: "auth#index"
+      get "/logout", to: "auth#logout"
     end
   end
 
